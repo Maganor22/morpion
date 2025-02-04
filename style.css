@@ -1,0 +1,122 @@
+body {
+  background-color: rgb(44, 44, 44);
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#initiateGame {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#difficultySelection {
+  margin-top: 20px;
+}
+
+label {
+  font-size: 1.2rem;
+}
+
+#difficultySelection select,
+#initiateGame input {
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box; /* Ajouté pour inclure le padding dans la largeur */
+}
+
+#difficultySelection button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(0, 128, 0);
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#difficultySelection button:hover {
+  background-color: rgb(0, 100, 0);
+}
+
+#resetBtn {
+  display: none;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(255, 0, 0);
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#resetBtn:hover {
+  background-color: rgb(200, 0, 0);
+}
+
+#messageTitle {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.boardTableBody {
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.boardTableBody tr {
+  display: flex;
+}
+
+.cell {
+  background-color: rgb(120, 158, 143);
+  width: 10vw;
+  height: 10vh;
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(80, 100, 90);
+}
+
+.cell:hover {
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.orange {
+  color: rgb(255, 165, 0) !important;
+}
+
+.green {
+  color: rgb(0, 255, 0) !important;
+}
+
+.yellow {
+  color: rgb(255, 255, 0) !important;
+}
+
+.red {
+  color: rgb(255, 0, 0) !important;
+}
+
+.white {
+  color: white !important;
+}
+
+.symbol {
+  font-size: 4rem;
+  color: rgb(44, 44, 44);
+}
